@@ -13,6 +13,7 @@
     #image {
         width: 30%;
         height: 100%;
+        border-radius: 20px 0 0 20px;
     }
 
     #form {
@@ -25,6 +26,10 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
+    main {
+        flex-direction: row-reverse;
+    }
+
     #login {
         width: 990px;
         display: flex;
@@ -33,6 +38,7 @@
     #image {
         width: 50%;
         height: 100%;
+        border-radius: 20px 0 0 20px;
     }
 
     #form {
