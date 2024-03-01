@@ -34,6 +34,9 @@ main {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 #image {
