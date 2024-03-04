@@ -3,6 +3,7 @@
 :root {
     --verde: #49a09d;
     --verde-h: #152d2d;
+    --verde-f: #8dece9;
     --lilas: #5f2c82;
     --branco: white;
     --preto: black;
@@ -66,10 +67,32 @@ main {
 .campo {
     background-color: var(--lilas);
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0;
+}
+
+.campo > span {
+    color: var(--branco);
+    font-size: 2rem;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: var(--verde-f);
+    font-size: 1rem;
+    width: calc(99% - 40px);
+    height: 80%;
+    border: 0;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.campo > input:focus-within {
+    background-color: var(--branco);
 }
 
 .campo > label {
